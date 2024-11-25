@@ -27,7 +27,7 @@ export function FormLogin({ usuario = undefined }: Readonly<TFormLoginProps>) {
 
   useEffect(() => {
     if (formStatus?.hasError === false) {
-      router.push('/insumo');
+      router.push('/cardapio');
     }
   }, [formStatus, router]);
 

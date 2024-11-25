@@ -40,11 +40,11 @@ export function calculateWeek(date: Date): {
 
   const dayOfWeek = date.getDay();
 
-  const weekStartDifference = dayOfWeek - 1;
+  const weekStartDifference = dayOfWeek - 2;
   const weekStart = new Date(date);
   weekStart.setDate(date.getDate() - weekStartDifference);
 
-  const weekEndDifference = 6 - dayOfWeek;
+  const weekEndDifference = 7 - dayOfWeek;
   const weekEnd = new Date(date);
   weekEnd.setDate(date.getDate() + weekEndDifference);
 

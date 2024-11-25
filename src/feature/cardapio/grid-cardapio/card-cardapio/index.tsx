@@ -84,7 +84,7 @@ function CardapioPreparoButton({ preparo }: Readonly<TCardapioPreparoButtonProps
 }
 
 export function CardCardapio({ cardapio, preparos }: Readonly<TCardCardapioProps>) {
-  const { weekDayName, formattedDate } = getDateInfo(cardapio.data);
+  const { weekDayName, formattedDate } = getDateInfo(new Date(cardapio.date));
   const [showTooltipRecomendado, setShowTooltipRecomendado] = useState(false);
   const [showTooltipControlado, setShowTooltipControlado] = useState(false);
 

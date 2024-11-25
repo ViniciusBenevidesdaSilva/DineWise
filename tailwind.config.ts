@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss";
 import tailwindcssAnimated from 'tailwindcss-animated';
 
 const config: Config = {
-  darkMode: "class",
   content: [
     "./src/**",
   ],
